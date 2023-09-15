@@ -1,0 +1,45 @@
+{% extends "index.html" %}
+
+{%block content%}
+
+<style>
+	#aa {
+        display: inline-block;
+        hieght: 100px;
+        font-size: 33px;
+        padding: 20px;
+        margin-top: 100px;
+        margin-right: 200px;
+        margin-left: 825px;
+        background-color: Aqua;
+        color: MediumBlue;
+    }
+</style>	
+
+<h1> all  users</h1>
+
+<table border="1" width="40%">
+    <tr>
+        <th>ID</th>
+        <th>UserName</th>
+        <th>Password</th>
+    </tr>
+    {%for u in users%}
+        <tr>
+            <td>
+                {{u.id}}
+            </td>
+            <td>
+                {{u.username}}
+            </td>
+            <td>
+                {{u.password}}
+            </td>
+        </tr>
+	{%endfor%}
+
+</table>
+</br>
+</br>
+<a id="aa" href="{% url 'index' %}">HOME</a>
+{%endblock%}

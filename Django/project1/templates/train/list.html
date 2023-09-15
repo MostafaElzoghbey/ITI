@@ -1,0 +1,78 @@
+{%extends 'index.html'%}
+
+{% comment %} <!DOCTYPE html>
+<html>
+	
+	<head>
+		<title>Title1</title>
+	</head>
+	
+<body>
+
+	<h1 align="center">LIST TRAINEE</h1>
+	
+	<a id="aa2" href="{% url 'login' %}">LOGIN</a>
+	<a id="aa2" href="{% url 'registration' %}">Registration</a>
+	</br>
+	<a href="{% url 'trinsert' %}">insert trainee</a>
+	<a href="{% url 'trupdate' %}">update trainee</a>
+	<a href="{% url 'trdelete' %}">delete trainee</a>
+	<a id="aa" href="{% url 'home' %}">return home</a>
+	</br>
+	<style>
+
+	body {
+		background-color: MediumPurple;
+	}
+	
+	h1 {
+		color: green;
+		background-color: cyan;
+	}
+	
+	a {
+		display: inline-block;
+		hieght: 100px;
+		font-size: 33px;
+		padding: 20px;
+		margin-top: 150px;
+		margin-right: 200px;
+		margin-left: 200px;
+		background-color: Crimson;
+		color: MediumBlue;
+	}
+
+	#aa {
+		display: inline-block;
+		hieght: 100px;
+		font-size: 33px;
+		padding: 20px;
+		margin-top: 150px;
+		margin-right: 200px;
+		margin-left: 825px;
+		background-color: Aqua;
+		color: MediumBlue;
+	}
+
+	#aa2 {
+		display: inline-block;
+		hieght: 100px;
+		font-size: 33px;
+		padding: 20px;
+		margin-top: 40px;
+		margin-right: -10px;
+		margin-left: 490px;
+		background-color: Bisque;
+		color: MediumBlue;
+	}
+	</style>
+</body>
+
+</html> {% endcomment %}
+
+{%block tit%}
+Trainee_List
+{%endblock%}
+{%block content%}
+<h1>List Trainee</h1>
+{%endblock%}

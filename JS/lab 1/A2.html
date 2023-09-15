@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>A2</title>
+</head>
+
+<body>
+
+	<script>
+
+		var Example = "Egypt";
+		var output = "";
+
+		for (var i = 0; i < Example.length; i++) {
+
+			if (Example[i] == Example[i].toUpperCase()) {
+
+				output += Example[i].toLowerCase();
+
+			} else {
+
+				output += Example[i].toUpperCase();
+			}
+		}
+
+		console.log(`Example: ${Example}`);
+		console.log(`Output: ${output}`);
+
+	</script>
+
+</body>
+
+</html>

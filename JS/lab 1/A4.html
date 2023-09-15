@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>A4</title>
+</head>
+
+<body>
+
+	<script>
+
+		var Example = 'Web Development Tutorial';
+		var output = '';
+		var s = Example.split(" ");
+		var count = 0;
+
+		for (var i = 0; i < s.length; i++) {
+
+			if (s[i].length > count) {
+
+				count = s[i].length;
+				output = s[i];
+			};
+		};
+
+		console.log(`Example: ${Example}`);
+		console.log(`Output: ${output}`);
+
+	</script>
+
+</body>
+
+</html>

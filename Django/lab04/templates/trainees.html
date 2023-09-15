@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>Trainees</title>
+</head>
+<body>
+    <h1>Trainees</h1>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+            <th>Start Date</th>
+        </tr>
+        {% for trainee in trainees %}
+        <tr>
+            <td>{{ trainee.name }}</td>
+            <td>{{ trainee.email }}</td>
+            <td>{{ trainee.phone_number }}</td>
+            <td>{{ trainee.start_date }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

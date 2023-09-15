@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>A3</title>
+</head>
+
+<body>
+
+	<script>
+
+		var Example = "thequickbrownfoxjumpsoverthelazydog";
+		var output = "";
+
+		for (var i = 0; i < Example.length; i++) {
+
+			if (Example.indexOf(Example[i]) == Example.slice(0, i).length) {
+
+				output += Example[i];
+			};
+		};
+
+		console.log(`Example: ${Example}`);
+		console.log(`Output: ${output}`);
+
+	</script>
+
+</body>
+
+</html>
